@@ -1,0 +1,9 @@
+Steps to install and run django project (web)
+- pip install django
+- django-admin --version
+- django-admin startproject MySite1 # Create project
+- python MySite1/manage.py runserver # Starting web server
+- Browser (http://127.0.0.1:8000) # Browsing website
+
+BASE_DIR
+ROOT_DIR

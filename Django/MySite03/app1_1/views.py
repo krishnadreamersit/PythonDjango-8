@@ -7,4 +7,4 @@ from django.http import HttpResponse # output library # 1
 # view function # 2
 
 def index(request):
-    return HttpResponse("Hello from app1_1 -> index()");
+    return render(request, 'app1_1/index.html')

@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'app1_1', # Register new app
     'app1_2',
     'app1_3',
-    'app1_4',
+    'app1_4', # render html file
+    'app1_5', # css, js, and image
 ]
 
 MIDDLEWARE = [

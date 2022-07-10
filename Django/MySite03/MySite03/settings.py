@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'app1_3',
     'app1_4', # render html file
     'app1_5', # css, js, and image
+    'app1_6', # bootstrap library -1
+    'app2_1', # Sending value to server-1 (url)
 ]
 
 MIDDLEWARE = [

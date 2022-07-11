@@ -6,4 +6,9 @@ def index(request):
 
 
 def getValues1(request):
-    return HttpResponse("Welcome to getValues1")
+    # receive process, and output
+    pid = request.GET.get('pid') # receive value from url
+    name = request.GET.get('name')
+    str1 ="PID : "+str(pid)+"<br/>";
+    str1 = str1+ "NAME : "+name+"<br/>"
+    return HttpResponse(str1)

@@ -35,6 +35,7 @@ def getValues2(request):
     str1 = str1 + "ADDRESS : " + address + "<br/>"
     return HttpResponse(str1)
 
+
 def getValues3(request):
     pid = request.POST['txt1']
     name = request.POST['txt2']
@@ -45,3 +46,7 @@ def getValues3(request):
     str1 = str1 + "NAME : " + name + "<br/>"
     str1 = str1 + "ADDRESS : " + address + "<br/>"
     return HttpResponse(str1)
+
+
+def getValues4(request, pid):
+    return HttpResponse("PID : "+str(pid))

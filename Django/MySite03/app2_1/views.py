@@ -47,6 +47,10 @@ def getValues3(request):
     str1 = str1 + "ADDRESS : " + address + "<br/>"
     return HttpResponse(str1)
 
-
-def getValues4(request, pid):
-    return HttpResponse("PID : "+str(pid))
+# 127.0.0.1:8000/app2_1/getValues4/1/Broadway/Kathmandu/<Enter>
+def getValues4(request, pid, name, address):
+    str1 = "<h1>Personal Info</h1>"
+    str1+="PID : {} </br>".format(pid)
+    str1 += "NAME : {} </br>".format(name)
+    str1 += "ADDRESS : {} </br>".format(address)
+    return HttpResponse(str1)

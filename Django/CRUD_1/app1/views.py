@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from pkg1 import person
+from pkg1 import mydb
 
 def index(request):
     # return HttpResponse("Hello from index of app1")
@@ -16,7 +17,8 @@ def savenew(request):
     pid=request.POST['txt1']
     fullname=request.POST['txt2']
     contactaddress=request.POST['txt3']
-    print(pid, fullname, contactaddress)
-    # save on database
-    # -----
+
+    p1 = person.Person(pid, fullname, contactaddress)
+    mydb.insertRecord(p1)
+
     return HttpResponse("Save record")

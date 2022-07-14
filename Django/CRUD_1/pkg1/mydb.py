@@ -8,7 +8,7 @@
 
 import sqlite3
 import sys
-from person import Person
+from pkg1.person import Person
 
 DB_FILE = "../db.sqlite3"
 
@@ -51,5 +51,10 @@ def insertRecord(objPerson):
         del conn
 #create_table()
 
-person  = Person(1, "Raj Rai", "KTM")
-insertRecord(person)
+p1  = Person(2, "Raj Rai", "KTM")
+insertRecord(p1)
+
+# Retrieve (select all)
+# Filter
+# Update
+# Delete

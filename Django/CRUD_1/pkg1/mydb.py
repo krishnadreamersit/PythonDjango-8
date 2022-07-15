@@ -10,7 +10,8 @@ import sqlite3
 import sys
 from pkg1.person import Person
 
-DB_FILE = "../db.sqlite3"
+# DB_FILE = "../db.sqlite3" # Console app path
+DB_FILE = "./db.sqlite3" # Web app path
 
 def create_table():
     conn = None
@@ -49,12 +50,35 @@ def insertRecord(objPerson):
     finally:
         del sql
         del conn
+
+def selectAll():
+    conn = None
+    sql = '''SELECT * FROM persons'''
+    persons = []
+    try:
+        conn = sqlite3.connect(DB_FILE)  # connect with db
+        cursor = conn.cursor()
+        cursor.execute(sql);  # Select All
+        rows = cursor.fetchall()
+        for row in rows:
+            persons.append(row)
+            # print(row)
+        cursor.close()
+        conn.close()  # connection close
+        print("Display all records successfully")
+        return persons
+    except:
+        print("Error : ", sys.exc_info()[0])
+    finally:
+        del sql
+        del conn
+
+# selectAll()
 #create_table()
-
-p1  = Person(2, "Raj Rai", "KTM")
-insertRecord(p1)
-
+# p1  = Person(2, "Raj Rai", "KTM")
+# insertRecord(p1)
 # Retrieve (select all)
+# ?
 # Filter
 # Update
 # Delete

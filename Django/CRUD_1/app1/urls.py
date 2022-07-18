@@ -1,5 +1,5 @@
 from django.urls import path
-from app1.views import index, addnew, savenew, displayedit, update
+from app1.views import index, addnew, savenew, displayedit, update, delete
 
 urlpatterns = [
     path('', index),
@@ -7,4 +7,5 @@ urlpatterns = [
     path('save/', savenew),
     path('edit', displayedit),
     path('update', update),
+    path('delete', delete),
 ]

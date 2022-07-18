@@ -68,6 +68,22 @@ def updateRecord(objPerson):
         del sql
         del conn
 
+def deleteRecord(pid):
+    conn = None
+    sql = '''DELETE FROM persons WHERE pid=?'''
+    values = (pid,)
+    try:
+        conn = sqlite3.connect(DB_FILE)  # connect with db
+        cursor = conn.cursor()
+        cursor.execute(sql, values) # record insert
+        conn.commit() # save inserted record
+        conn.close()  # connection close
+        print("Delete Record successfully")
+    except:
+        print("Error : ", sys.exc_info()[0])
+    finally:
+        del sql
+        del conn
 def selectAll():
     conn = None
     sql = '''SELECT * FROM persons'''

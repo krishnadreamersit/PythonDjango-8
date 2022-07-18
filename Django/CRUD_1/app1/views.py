@@ -45,4 +45,12 @@ def update(request):
     p1 = person.Person(pid, name, address)
     mydb.updateRecord(p1)
     print("Update Record Successfully")
-    return redirect('/');  # Redirect to index page
+    return redirect('/')  # Redirect to index page
+
+def delete(request):
+    pid = request.GET['pid']
+    print(pid)
+    mydb.deleteRecord(pid);
+    print("Delete record successfully")
+    return redirect('/')
+    # return HttpResponse("Delete record successfully")

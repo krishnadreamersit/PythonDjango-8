@@ -11,7 +11,7 @@
     <table border="1" width="98%">
         <thead><td>ID</td><td>NAME</td><td>ADDRESS</td><td>CONTROL</td></thead>
         {% for person in allperson %}
-             <tr><td>{{ person.0 }}</td><td>{{ person.1 }}</td><td>{{ person.2 }}</td><td> <a href="../edit?pid={{ person.0 }}&name={{ person.1 }}&address={{ person.2 }}">EDIT </a> | DELETE </td></tr>
+             <tr><td>{{ person.0 }}</td><td>{{ person.1 }}</td><td>{{ person.2 }}</td><td> <a href="../edit?pid={{ person.0 }}&name={{ person.1 }}&address={{ person.2 }}">EDIT </a> | <a href="delete?pid={{ person.0 }}">DELETE</a> </td></tr>
         {% endfor %}
     </table>
 </body>

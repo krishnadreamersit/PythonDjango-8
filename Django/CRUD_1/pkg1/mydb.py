@@ -53,16 +53,15 @@ def insertRecord(objPerson):
 
 def updateRecord(objPerson):
     conn = None
-    sql = '''INSERT INTO persons (pid, name, address) VALUES(?,?,?)'''
-    values = (objPerson.getPID(), objPerson.getName(), objPerson.getAddress())
-
+    sql = '''UPDATE persons SET name=?, address=? WHERE pid=?'''
+    values = (objPerson.getName(), objPerson.getAddress(), objPerson.getPID())
     try:
         conn = sqlite3.connect(DB_FILE)  # connect with db
         cursor = conn.cursor()
-        cursor.execute(sql, values); # record insert
+        cursor.execute(sql, values) # record insert
         conn.commit() # save inserted record
         conn.close()  # connection close
-        print("Record insert successfully")
+        print("Record update successfully")
     except:
         print("Error : ", sys.exc_info()[0])
     finally:

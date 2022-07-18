@@ -41,6 +41,8 @@ def update(request):
     pid = request.POST['txt1']
     name = request.POST['txt2']
     address=request.POST['txt3']
-    print(pid, name, address)
     # update record on table based on pid
-    return HttpResponse("Update record successfully")
+    p1 = person.Person(pid, name, address)
+    mydb.updateRecord(p1)
+    print("Update Record Successfully")
+    return redirect('/');  # Redirect to index page

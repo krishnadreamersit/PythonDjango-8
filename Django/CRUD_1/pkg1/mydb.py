@@ -51,6 +51,24 @@ def insertRecord(objPerson):
         del sql
         del conn
 
+def updateRecord(objPerson):
+    conn = None
+    sql = '''INSERT INTO persons (pid, name, address) VALUES(?,?,?)'''
+    values = (objPerson.getPID(), objPerson.getName(), objPerson.getAddress())
+
+    try:
+        conn = sqlite3.connect(DB_FILE)  # connect with db
+        cursor = conn.cursor()
+        cursor.execute(sql, values); # record insert
+        conn.commit() # save inserted record
+        conn.close()  # connection close
+        print("Record insert successfully")
+    except:
+        print("Error : ", sys.exc_info()[0])
+    finally:
+        del sql
+        del conn
+
 def selectAll():
     conn = None
     sql = '''SELECT * FROM persons'''
@@ -72,6 +90,9 @@ def selectAll():
     finally:
         del sql
         del conn
+
+# create a function to update record
+# update record
 
 # selectAll()
 #create_table()

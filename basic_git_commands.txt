@@ -1,0 +1,14 @@
+--- one time ------
+git config --global user.name "your name"
+git config --global user.email "your_email"
+git config --global user.password "xxxxxxxxx"
+
+
+git clone url_of_repository
+remove .git folder
+
+git remote add origin new_url_of_repository
+git init
+git add .
+git commit -m "Commit message"
+git push origin master

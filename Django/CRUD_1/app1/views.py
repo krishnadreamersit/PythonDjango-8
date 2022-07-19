@@ -50,7 +50,20 @@ def update(request):
 def delete(request):
     pid = request.GET['pid']
     print(pid)
+    # page display with delete message ("Do you want to delete?")
     mydb.deleteRecord(pid);
     print("Delete record successfully")
     return redirect('/')
     # return HttpResponse("Delete record successfully")
+
+def search(request):
+    if(request.method=='GET'):
+        # display search form
+        return render(request, 'app1/search.html')
+    elif (request.method=='POST'):
+        # searching and display result
+        searchTerm = request.POST['txtSearch']
+        # send value to search on database
+        persons = mydb.search(searchTerm)
+        print(persons)
+        return HttpResponse("Searching record ..."+searchTerm)

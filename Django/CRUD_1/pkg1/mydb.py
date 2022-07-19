@@ -84,6 +84,7 @@ def deleteRecord(pid):
     finally:
         del sql
         del conn
+
 def selectAll():
     conn = None
     sql = '''SELECT * FROM persons'''
@@ -106,15 +107,25 @@ def selectAll():
         del sql
         del conn
 
-# create a function to update record
-# update record
+def search(searchTerm):
+    conn = None
+    sql = "SELECT * FROM persons WHERE name LIKE '%"+searchTerm+"%' OR address LIKE '%"+searchTerm+"%'"
+    persons = []
+    try:
+        conn = sqlite3.connect(DB_FILE)  # connect with db
+        cursor = conn.cursor()
+        cursor.execute(sql);  # Search
+        rows = cursor.fetchall()
+        for row in rows:
+            persons.append(row)
+            # print(row)
+        cursor.close()
+        conn.close()  # connection close
+        print("Display all records successfully")
+        return persons
+    except:
+        print("Error : ", sys.exc_info()[0])
+    finally:
+        del sql
+        del conn
 
-# selectAll()
-#create_table()
-# p1  = Person(2, "Raj Rai", "KTM")
-# insertRecord(p1)
-# Retrieve (select all)
-# ?
-# Filter
-# Update
-# Delete

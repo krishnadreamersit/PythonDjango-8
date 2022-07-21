@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'app1_5', # css, js, and image
     'app1_6', # bootstrap library -1
     'app2_1', # Sending value to server-1 (url)
+    'app3_1', # site admin panel
 ]
 
 MIDDLEWARE = [
@@ -88,6 +89,19 @@ DATABASES = {
     }
 }
 
+"""
+'mysql': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'test',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
+    }
+"""
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators

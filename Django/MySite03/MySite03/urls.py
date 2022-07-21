@@ -29,4 +29,5 @@ urlpatterns = [
     path('app1_5/', include('app1_5.urls')), # css, js, and image
     path('app1_6/', include('app1_6.urls')), # bootstrap
     path('app2_1/', include('app2_1.urls')), # sending value(s) from client to server
+    path('app3_1/', include('app3_1.urls')), # models
 ]

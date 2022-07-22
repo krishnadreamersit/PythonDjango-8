@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from app3_1.models import Student, Person
+from app3_1.models import Student, Person, PersonalInfo
+import csv
 
 # Create your views here.
 # root\urls.py
@@ -55,3 +56,20 @@ def index(request):
     # ?
     
     return render(request, 'app3_1/index.html', context)
+
+
+def migrate(request):
+    file = open('./data/personal_data.csv')
+    csv_reader = csv.reader(file)
+    header = []
+    header_row = next(csv_reader)
+    # print(header_row)
+    for row in csv_reader:
+        # print(row[0], row[1], row[2], row[3], row[4])
+        pinfo = PersonalInfo(id=row[0], first_name=row[1],
+                             last_name=row[2], email=row[3], gender=row[4])
+        pinfo.save()
+    return HttpResponse("Data Migrate Successfully!")
+
+def allpersons(request):
+    return HttpResponse("Display all persons successfully")

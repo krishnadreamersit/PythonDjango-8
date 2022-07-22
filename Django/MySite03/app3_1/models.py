@@ -5,7 +5,7 @@ class Person(models.Model):
     address = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.fullname+", "+self.address
+        return str(self.id)+", "+self.fullname+", "+self.address
 
 
 class Student(models.Model):

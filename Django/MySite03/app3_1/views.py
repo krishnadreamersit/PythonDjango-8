@@ -40,6 +40,14 @@ def index(request):
     persons = Person.objects.all()
     print(persons)
     context = {'persons': persons}
+
+    # Search/Filter
+    person = Person.objects.get(id=1)
+    if(person):
+        print(person)
+    else:
+        print("Not found")
+
     # U - Update/Edit
     # ?
 

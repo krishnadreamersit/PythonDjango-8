@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to epanel</title>
+</head>
+<body>
+    <h2>Welcome to epanel</h2>
+    <p><a href="new">Add User</a></p>
+    <h3>All Users</h3>
+    <table border="1" width="95%">
+        <thead>
+            <td>ID</td>
+            <td>USER NAME</td>
+            <td>PASSWORD</td>
+            <td>FULL NAME</td>
+            <td>EMAIL ADDRESS</td>
+            <td>CONTROL</td>
+        </thead>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.id }}</td>
+            <td>{{ user.username }}</td>
+            <td>{{ user.password }}</td>
+            <td>{{ user.fullname }}</td>
+            <td>{{ user.email }}</td>
+            <td>EDIT | DELETE</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+</body>
+</html>

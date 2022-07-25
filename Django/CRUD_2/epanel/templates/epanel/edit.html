@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>New User Entry Form</title>
+    <title>User Edit Form</title>
 </head>
 <body>
-    <h2>New User Entry Form</h2>
-    <form action="/new" method="post">
+    <h2>User Edit Form</h2>
+    <form action="/edit" method="post">
         {% csrf_token %}
         <p>USER NAME : <input type="text" name="txtUser"></p>
         <p>PASSWORD : <input type="text" name="txtPassword"></p>
         <p>FULL NAME : <input type="text" name="txtFullName"></p>
         <p>EMAIL : <input type="text" name="txtEmail"></p>
-        <p><input type="submit" value="SAVE"></p>
+        <p><input type="submit" value="UPDATE"></p>
     </form>
 </body>
 </html>

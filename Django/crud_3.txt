@@ -1,0 +1,15 @@
+CRUD-3
+Login
+Logout
+New
+Edit
+Delete
+Display All
+
+Item
+id : 1
+description: Board Market Faber Castell
+rate=50
+qty=100
+exp_date=Sep 30 2022
+photo = item_1.jpg

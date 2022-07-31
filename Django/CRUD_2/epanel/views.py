@@ -38,6 +38,11 @@ def login(request):
         else:
             return redirect('/')
 
+def logout(request):
+    del request.session['CurrentUser']
+    print("Logout.....")
+    return redirect("/")
+
 def new(request):
     if request.method =='GET':
         # get method - default
@@ -67,7 +72,8 @@ def edit(request):
         tmpUser = UserInfo.objects.get(id=id)
         # send tmpUser to display on template
         print("Edit "+str(request.session['CurrentUser']))
-        return render(request, 'epanel/edit.html', {'user':tmpUser})
+        cUser = request.session['CurrentUser'];
+        return render(request, 'epanel/edit.html', {'user':tmpUser, 'cuser':cUser})
     elif request.method=='POST':
         # receive values from edit form
         id = int(request.POST['txtId'])
@@ -92,7 +98,8 @@ def delete(request):
         # search and send to delete form
         tmpUser = UserInfo.objects.get(id=id)
         print("Delete "+str(request.session['CurrentUser']))
-        return render(request, 'epanel/delete.html', {'user': tmpUser})
+        cUser = request.session['CurrentUser'];
+        return render(request, 'epanel/delete.html', {'user': tmpUser, 'cuser':cUser})
     elif request.method == 'POST':
         # receive id
         id = int(request.POST['txtId'])

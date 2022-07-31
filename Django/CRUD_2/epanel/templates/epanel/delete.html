@@ -5,6 +5,8 @@
     <title>User Delete Form</title>
 </head>
 <body>
+    <p>Current User : {{ cuser.username }} | <a href="logout">Logout</a> </p>
+
     <h2>User Delete Form</h2>
     <form action="/delete" method="post">
         {% csrf_token %}

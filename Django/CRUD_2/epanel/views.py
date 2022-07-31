@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import redirect
 from django.shortcuts import render
 from epanel.models import UserInfo
+from django.forms.models import model_to_dict
 
 def index(request):
     # get all users
@@ -10,7 +11,9 @@ def index(request):
     # Task
         # alert user on insert
         # display records with multi-page
-    return render(request, 'epanel/index.html', {'users':users})
+    print("Index " + str(request.session['CurrentUser']))
+    cUser = request.session['CurrentUser'];
+    return render(request, 'epanel/index.html', {'users':users, 'cuser':cUser})
 
 
 def login(request):
@@ -23,7 +26,9 @@ def login(request):
         result = None
         try:
             tmpUser = UserInfo.objects.get(username=username, password=password)
-            request.session['CurrentUser']=tmpUser
+            tmpUser = model_to_dict(tmpUser) # Model to dictionary
+            request.session['CurrentUser']=tmpUser # Object of type UserInfo is not JSON serializable
+            print("Login "+str(request.session['CurrentUser']))
             result = True
         except:
             result = False
@@ -36,7 +41,9 @@ def login(request):
 def new(request):
     if request.method =='GET':
         # get method - default
-        return render(request, 'epanel/new.html')
+        print("New " + str(request.session['CurrentUser']))
+        cUser = request.session['CurrentUser'];
+        return render(request, 'epanel/new.html', {'cuser':cUser})
     elif request.method == 'POST':
         # post method - specified
         # read values from web form and save in database
@@ -59,6 +66,7 @@ def edit(request):
         id = int(request.GET['id'])
         tmpUser = UserInfo.objects.get(id=id)
         # send tmpUser to display on template
+        print("Edit "+str(request.session['CurrentUser']))
         return render(request, 'epanel/edit.html', {'user':tmpUser})
     elif request.method=='POST':
         # receive values from edit form
@@ -83,6 +91,7 @@ def delete(request):
         id = int(request.GET['id'])
         # search and send to delete form
         tmpUser = UserInfo.objects.get(id=id)
+        print("Delete "+str(request.session['CurrentUser']))
         return render(request, 'epanel/delete.html', {'user': tmpUser})
     elif request.method == 'POST':
         # receive id

@@ -5,6 +5,7 @@
     <title>New User Entry Form</title>
 </head>
 <body>
+    <p>Current User : {{ cuser.username }}</p>
     <h2>New User Entry Form</h2>
     <form action="/new" method="post">
         {% csrf_token %}

@@ -1,0 +1,6 @@
+Tasks:
+1. Upload photograph (image file) and biodata (pdf/doc).
+2. Upload data of birth
+3. Display photograph, link of biodata, age
+4. Export records in csv, xml, pdf, text file.
+5. Add Pagination features to display records (5 record each page)

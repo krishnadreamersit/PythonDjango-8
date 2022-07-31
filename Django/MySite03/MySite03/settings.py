@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'app1_5', # css, js, and image
     'app1_6', # bootstrap library -1
     'app2_1', # Sending value to server-1 (url)
-    'app3_1', # site admin panel
+    'app3_1', # site admin panel, model
+    'app4_1', # Session and Cookies
 ]
 
 MIDDLEWARE = [

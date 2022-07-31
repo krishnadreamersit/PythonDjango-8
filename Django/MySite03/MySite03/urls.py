@@ -22,7 +22,7 @@ from app1_2.views import index as home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index), # step-2
+    path('index/', index), # step-2
     path('home/', home),
     path('app1_3/', include('app1_3.urls')),
     path('app1_4/', include('app1_4.urls')),
@@ -30,4 +30,5 @@ urlpatterns = [
     path('app1_6/', include('app1_6.urls')), # bootstrap
     path('app2_1/', include('app2_1.urls')), # sending value(s) from client to server
     path('app3_1/', include('app3_1.urls')), # models
+    path('', include('app4_1.urls')), # Session and Cookies
 ]

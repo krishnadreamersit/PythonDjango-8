@@ -24,10 +24,9 @@
             <td>{{ user.password }}</td>
             <td>{{ user.fullname }}</td>
             <td>{{ user.email }}</td>
-            <td><a href="/edit">EDIT</a> | <a href="/delete">DELETE</a></td>
+            <td><a href="/edit?id={{ user.id }}">EDIT</a> | <a href="/delete?id={{ user.id }}">DELETE</a></td>
         </tr>
         {% endfor %}
-
     </table>
 </body>
 </html>

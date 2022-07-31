@@ -8,10 +8,11 @@
     <h2>User Delete Form</h2>
     <form action="/delete" method="post">
         {% csrf_token %}
-        <p>USER NAME : <input type="text" name="txtUser"></p>
-        <p>PASSWORD : <input type="text" name="txtPassword"></p>
-        <p>FULL NAME : <input type="text" name="txtFullName"></p>
-        <p>EMAIL : <input type="text" name="txtEmail"></p>
+        <input type="hidden" name="txtId" value="{{ user.id }}">
+        <p>USER NAME : <input type="text" name="txtUser" value="{{ user.username }}"></p>
+        <p>PASSWORD : <input type="text" name="txtPassword"  value="{{ user.password }}"></p>
+        <p>FULL NAME : <input type="text" name="txtFullName" value="{{ user.fullname }}"></p>
+        <p>EMAIL : <input type="text" name="txtEmail" value="{{ user.email }}"></p>
         <p><input type="submit" value="DELETE"></p>
     </form>
 </body>

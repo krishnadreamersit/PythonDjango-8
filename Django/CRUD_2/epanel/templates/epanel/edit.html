@@ -6,7 +6,6 @@
 </head>
 <body>
 <p>Current User : {{ cuser.username }} | <a href="logout">Logout</a> </p>
-
     <h2>User Edit Form</h2>
     <form action="/edit" method="post">
         {% csrf_token %}

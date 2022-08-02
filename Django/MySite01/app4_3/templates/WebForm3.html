@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Form-1</title>
+</head>
+<body>
+    <h3>Web Form-1</h3>
+    <form action="get_form3" method="get">
+        NAME : <input type="text" name="txt_name"><br/>
+        <input type="submit" value="SEND">
+    </form>
+
+    <h3>Web Form-2</h3>
+    <form action="get_form3" method="post">
+        {% csrf_token %}
+        NAME : <input type="text" name="txt_name"><br/>
+        <input type="submit" value="SEND">
+    </form>
+</body>
+</html>

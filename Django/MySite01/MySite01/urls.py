@@ -25,7 +25,7 @@ urlpatterns = [
     path('app2_1/', include('app2_1.urls')),
     path('app3_1/', include('app3_1.urls')),
     path('app3_2/', include('app3_2.urls')),
-    path('app4_1/', include('app4_1.urls')),
+    path('app4_2/', include('app4_2.urls')),
     path('app4_2/', include('app4_2.urls')),
     path('app4_3/', include('app4_3.urls')),
     path('app5_1/', include('app5_1.urls')),
@@ -40,11 +40,11 @@ urlpatterns = [
     path('app11_1/', include('app11_1.urls')),
     path('app12_1/', include('app12_1.urls')),
     path('app12_2/', include('app12_2.urls')),
-    path('app14_1/', include('app14_1.urls')),
-    path('app15_1/', include('app15_1.urls')),
-    path('app15_2/', include('app15_2.urls')),
-    path('app16_1/', include('app16_1.urls')),
-    path('app17_1/', include('app17_1.urls')),
+    # path('app14_1/', include('app14_1.urls')),
+    # path('app15_1/', include('app15_1.urls')),
+    # path('app15_2/', include('app15_2.urls')),
+    # path('app16_1/', include('app16_1.urls')),
+    # path('app17_1/', include('app17_1.urls')),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

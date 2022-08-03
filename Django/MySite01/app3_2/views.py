@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-
+# get method of form/url
 def index(request):
     n1 = request.GET.get('num1')
     n2 = request.GET.get('num2')
@@ -12,6 +12,7 @@ def index(request):
                         "Result : "+str(n3)+"<br/>"
                         )
 
+# form or url
 def calculate(request):
     n1 = request.GET.get('num1')
     n2 = request.GET.get('num2')
@@ -20,7 +21,7 @@ def calculate(request):
 
     if operator=='.':
         n3 = float(n1) + float(n2)
-        operator='+'
+        # operator='+'
     elif operator=='-':
         n3 = float(n1) - float(n2)
     elif operator=='*':

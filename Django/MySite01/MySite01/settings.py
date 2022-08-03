@@ -39,17 +39,27 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app1_1', 'app2_1', 'app3_1', 'app3_2',
-    'app4_1', 'app4_2', 'app4_3', 'app5_1',
-    'app6_1', 'app7_1', 'app8_1', 'app9_1',
-    'app9_2', 'app9_3', 'app9_4', 'app10_1',
-    'app11_1', 'app12_1', 'app12_2', 'app14_1',
-    'rest_framework',
-    'app15_1', # RestAPI
-    'app15_2', # RestAPI Web Test
-    'app16_1', # File Upload
-    'app17_1', # Email Send
+    'app4_2', 'app4_2', 'app4_3', 'app5_1',
+    'app6_1',  # CRUD MySQL
+    'app7_1',
+    'app8_1', # CRUD Model
+    'app9_1', # Model & Forms
+    'app9_2',
+    'app9_3', # Model and Form -CRUD
+    'app9_4', # Model, ModelForm - CRUD
+    'app10_1', # Generic Views - CRUD
+    'app11_1', # User Management
+    'app12_1', # Session Management
+    'app12_2', # Cookie Management
+    # 'app13_1' # Middleware - settings ->
 
-    'app15_3', # RestAPI
+    # 'app14_1',
+    # 'rest_framework',
+    # 'app15_1', # RestAPI
+    # 'app15_2', # RestAPI Web Test
+    # 'app16_1', # File Upload
+    # 'app17_1', # Email Send
+    # 'app15_3', # RestAPI
 ]
 
 MIDDLEWARE = [
@@ -146,7 +156,7 @@ USE_TZ = True
 
 STATIC_ROOT = 'staticfiles'
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static/' # images, css, js files
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),

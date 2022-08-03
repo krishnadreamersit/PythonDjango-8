@@ -40,7 +40,7 @@ def index(request):
     #    print("FALSE")
     #return HttpResponse("Hello from app11_1.")
 
-    # Task
+# Task
     # Create an application which used to manage users. USER-CRUD Application
         # List all users
         # Filter users

@@ -9,6 +9,7 @@ def index(request):
     # return HttpResponse("Hello from App3")
     return render(request, 'First.html')
 
+# 127.0.0.1:8000?var1 = Nepal
 def get_value(request):
     var1 = request.GET.get('var1') # getting value from URL (Address Bar)
     # return HttpResponse("Full Name : "+str(var1))# display on browser

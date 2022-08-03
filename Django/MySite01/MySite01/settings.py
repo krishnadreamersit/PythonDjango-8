@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app1_1', 'app2_1', 'app3_1', 'app3_2',
-    'app4_2', 'app4_2', 'app4_3', 'app5_1',
+    'app4_1', 'app4_2', 'app4_3', 'app5_1',
     'app6_1',  # CRUD MySQL
     'app7_1',
     'app8_1', # CRUD Model
@@ -51,9 +51,8 @@ INSTALLED_APPS = [
     'app11_1', # User Management
     'app12_1', # Session Management
     'app12_2', # Cookie Management
-    # 'app13_1' # Middleware - settings ->
-
-    # 'app14_1',
+    # 'app14_1' # Middleware - settings ->
+    'app14_1', # Creating None-HTML Contents (image, pdf, csv etc)
     # 'rest_framework',
     # 'app15_1', # RestAPI
     # 'app15_2', # RestAPI Web Test
@@ -154,7 +153,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_ROOT = 'staticfiles'
+STATIC_ROOT = 'staticfiles'# uploaded files
 
 STATIC_URL = '/static/' # images, css, js files
 

@@ -11,7 +11,7 @@ def index(request):
 
 
 def create_image(request):
-    file_path = staticfiles_storage.path('app14_1/images/image_1.png')
+    file_path = staticfiles_storage.path('app14_1/images/image_2.png')
     image_data = open(file_path, "rb").read()
     return HttpResponse(image_data, content_type="image/png")
 
@@ -33,3 +33,9 @@ def create_pdf(request):
     p.showPage()
     p.save()
     return response
+
+#Note:
+    # ini file
+    # xml file
+    # Word document
+    # Excel book

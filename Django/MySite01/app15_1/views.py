@@ -1,4 +1,8 @@
-from .models import Customer
+# pip install djangorestframework
+# pip install markdown       # Markdown support for the browsable API.
+# pip install django-filter  # Filtering support
+
+from .models import Customer #1
 from django.http import HttpResponse
 from .serializers import SnippetSerializer
 from django.http import Http404
@@ -12,7 +16,7 @@ class CustomerList(APIView):
     List all snippets, or create a new snippet.
     """
     def get(self, request, format=None):
-        snippets = Customer.objects.all()
+        snippets = Customer.objects.all() # 2
         serializer = SnippetSerializer(snippets, many=True)
         return Response(serializer.data)
 
@@ -30,8 +34,8 @@ class CustomerDetail(APIView):
     """
     def get_object(self, pk):
         try:
-            return Customer.objects.get(pk=pk)
-        except Customer.DoesNotExist:
+            return Customer.objects.get(pk=pk) # 3
+        except Customer.DoesNotExist: # 4
             raise Http404
 
     def get(self, request, pk, format=None):

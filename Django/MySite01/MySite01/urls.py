@@ -41,7 +41,7 @@ urlpatterns = [
     path('app12_1/', include('app12_1.urls')),
     path('app12_2/', include('app12_2.urls')),
     path('app14_1/', include('app14_1.urls')),
-    # path('app15_1/', include('app15_1.urls')),
+    path('app15_1/', include('app15_1.urls')),
     # path('app15_2/', include('app15_2.urls')),
     # path('app16_1/', include('app16_1.urls')),
     # path('app17_1/', include('app17_1.urls')),

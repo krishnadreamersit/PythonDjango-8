@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Customer(models.Model):
+    # id (auto-increment, pk, int)
     fullname = models.CharField(max_length=50)
     address = models.CharField(max_length=50)
 

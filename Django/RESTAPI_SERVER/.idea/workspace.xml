@@ -2,50 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0b5b296-a6af-4732-ad11-fce62cfacf79" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/.idea/RESTAPI_CLIENT.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/RESTAPI_CLIENT/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/RESTAPI_CLIENT/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/RESTAPI_CLIENT/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/RESTAPI_CLIENT/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/RESTAPI_CLIENT/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/app15_2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/app15_2/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/app15_2/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/app15_2/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/app15_2/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/app15_2/templates/app15_2/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/app15_2/templates/app15_2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/app15_2/templates/app15_2/new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/app15_2/templates/app15_2/result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/app15_2/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/app15_2/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/app15_2/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RESTAPI_CLIENT/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app15_1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app15_1/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app15_1/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app15_1/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app15_1/migrations/0002_alter_customer_id.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app15_1/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app15_1/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app15_1/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app15_1/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app15_1/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app15_1/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app15_1/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MySite01/MySite01/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MySite01/MySite01/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CorePython/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CorePython/.idea/CorePython.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CorePython/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CorePython/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CorePython/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CorePython/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CorePython/RESTAPI_TEST/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CorePython/RESTAPI_TEST/.idea/RESTAPI_TEST.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CorePython/RESTAPI_TEST/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CorePython/RESTAPI_TEST/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CorePython/RESTAPI_TEST/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CorePython/RESTAPI_TEST/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CorePython/RESTAPI_TEST/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CorePython/.ipynb_checkpoints/Exceptions-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CorePython/.ipynb_checkpoints/FileIO-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CorePython/.ipynb_checkpoints/OOP-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CorePython/.ipynb_checkpoints/String-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CorePython/.ipynb_checkpoints/sqlite_crud-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CorePython/.ipynb_checkpoints/working-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RESTAPI_SERVER/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/RESTAPI_SERVER/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RESTAPI_SERVER/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/RESTAPI_SERVER/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Administrator/Desktop/Python/PythonDjango-8/Django/RESTAPI_SERVER"
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/Python/PythonDjango-8/CorePython"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -114,6 +92,8 @@
       <option name="presentableId" value="Default" />
       <updated>1659575340476</updated>
       <workItem from="1659575354662" duration="2417000" />
+      <workItem from="1659580301998" duration="560000" />
+      <workItem from="1659659289284" duration="1452000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,14 @@
+Both switches have an empty MAC address table, and all PCs have an empty ARP table.
+
+1. IFPC1 pings to PC3, what messages will be sent over the network,
+‘and which devices will receive them?
+
+2. Send the ping and use Packet Tracer’s ‘simulation mode" to verify your answer.
+
+3. Use pings to generate network traffic and allow the switches to learn the MAC addresses
+of all PCs on the network,
+
+4. Use ‘show commands on the switches to identify the MAC address of each PC.
+
+5. Clear the dynamic MAC addresses from the MAC address table of each switch.
+

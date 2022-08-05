@@ -1,0 +1,22 @@
+Database: python5
+Table: persons
+Columns: pid - int(3), fullname - varchar(50), address - varchar(50)
+
+Insert record
+insert into persons(pid, fullname, address) values(1, "Anup Shrestha", "Ktm");
+insert into persons(pid, fullname, address) values(2, "Subin Shrestha", "Ktm");
+
+Select records
+select pid, fullname, address FROM persons;
+select fullname, address, pid FROM persons;
+select fullname FROM persons;
+select * FROM persons;
+
+Update Record
+UPDATE persons set fullname="Anup Shrestha" WHERE pid=1;
+UPDATE persons SET fullname="Rajesh Rai", address="Bhk" WHERE pid=1;
+
+Delete Record
+DELETE FROM persons WHERE pid=1;
+DELETE FROM persons WHERE pid=2;
+DELETE FROM persons;

@@ -1,0 +1,29 @@
+Project: Console Application/GUI Application
+
+# Covers
+- Varaibles, data types - all
+- Operators - all
+- If statement, for loop, while loop, break, continue, pass, return
+- Functions - library function, user defined functions
+- Database/File IO
+- OOPs
+- Exception Handling
+- CSV
+- Utilities
+- GUI or Console
+
+Features of Project
+1. Print Main Menu
+2. Read option from User
+3. Read values from User
+4. Process inputs values
+5. Display Result
+6. Save Result on File/Database
+7. Search result from File/Database
+8. Search and Edit Record from File/Database
+9. Search and Delete Record from File/Database
+10. Backup and Restore Records of File/Database
+
+
+References
+https://www.youtube.com/playlist?list=PLC_6qYn414JyZ8Tqwz6MPJhVZwC7ba3ZN
